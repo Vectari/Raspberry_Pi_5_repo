@@ -12,9 +12,9 @@ GPIO.setup(LIGHT_PIN, GPIO.OUT)
 try:
     while True:
         GPIO.output(LIGHT_PIN, GPIO.HIGH)  # Turn the light on
-        time.sleep(0.2)                      # Wait for 1 second
+        time.sleep(1)                      # Wait for 1 second
         GPIO.output(LIGHT_PIN, GPIO.LOW)   # Turn the light off
-        time.sleep(0.2)                      # Wait for 1 second
+        time.sleep(1)                      # Wait for 1 second
 except KeyboardInterrupt:
     print("\nExiting program.")
 finally:
