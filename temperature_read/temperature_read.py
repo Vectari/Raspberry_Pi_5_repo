@@ -24,3 +24,11 @@ try:
         print("-------")
 except KeyboardInterrupt:
     print("\nZatrzymano odczyt temperatury.")
+
+
+
+
+# Raspberry Pi GPIO4 (pin 7) ---> DQ (obie sondy) żółte
+# Raspberry Pi 3.3V (pin 1) ----> VCC (obie sondy) czerwone
+# Raspberry Pi GND (pin 6) -----> GND (obie sondy) czarne
+# Rezystor 4.7kΩ pomiędzy VCC a DQ
