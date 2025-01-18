@@ -21,5 +21,6 @@ try:
             temperature = sensor.get_temperature()
             print(f"Czujnik {sensor.id}: {temperature:.2f}°C")
         time.sleep(1)  # Odczekanie 1 sekundy przed kolejnym odczytem
+        print("-------")
 except KeyboardInterrupt:
     print("\nZatrzymano odczyt temperatury.")
